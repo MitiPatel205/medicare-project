@@ -181,3 +181,15 @@ footer.footer {
     max-width: 350px;
   }
 }
+/* theme.css additions for BookingPage */
+.card {
+  border-radius: 1rem;
+}
+
+.card-title i {
+  vertical-align: middle;
+}
+
+.spinner-border {
+  vertical-align: middle;
+}
