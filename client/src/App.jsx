@@ -21,6 +21,7 @@ import MedicineDetail from './pages/MedicineDetail';
 import CartPage from './pages/CartPage';
 import PaymentPage from './pages/PaymentPage';
 import ShippingPage from './pages/ShippingPage';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -49,8 +50,17 @@ function App() {
           <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
           <Route path="/payment" element={<PaymentPage cart={cart} setCart={setCart} />} />
           <Route path="/shipping" element={<ShippingPage cart={cart} setCart={setCart} />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/user-dashboard"
+          element={
+            <ProtectedRoute>
+              <UserDashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<Login />} />
         </Routes>
       </div>
       <Footer />
