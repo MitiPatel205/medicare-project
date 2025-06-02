@@ -45,9 +45,69 @@ export const bookAppointment = async (appointmentData, token) => {
   return response.data;
 };
 
-// Example for adding more endpoints
-// export const updateDoctor = async (id, data, token) => { ... };
+// ====================
+// Medicine E-commerce Endpoints
+// ====================
 
-// Export Axios instance
+// Fetch all medicines
+export const fetchMedicines = async () => {
+  const response = await API.get('/medicines');
+  return response.data;
+};
 
+// Fetch a single medicine
+export const fetchMedicine = async (id) => {
+  const response = await API.get(`/medicines/${id}`);
+  return response.data;
+};
+
+// Add item to cart (for server-side cart, optional)
+export const addToCart = async (medicineId, quantity, token) => {
+  const response = await API.post('/cart', { medicineId, quantity }, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Get cart (if using server-side cart)
+export const fetchCart = async (token) => {
+  const response = await API.get('/cart', {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Remove item from cart
+export const removeFromCart = async (medicineId, token) => {
+  const response = await API.delete(`/cart/${medicineId}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Update cart item quantity
+export const updateCartQuantity = async (medicineId, quantity, token) => {
+  const response = await API.put(`/cart/${medicineId}`, { quantity }, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Payment endpoint
+export const processPayment = async (paymentInfo, cart, token) => {
+  const response = await API.post('/payment', { paymentInfo, cart }, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Shipping endpoint
+export const submitShipping = async (shippingInfo, token) => {
+  const response = await API.post('/shipping', shippingInfo, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  return response.data;
+};
+
+// Export Axios instance for custom use if needed
 export default API;

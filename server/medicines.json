@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Paracetamol",
+    "category": "Pain Relief",
+    "price": 20,
+    "quantity": 100,
+    "image": "https://cdn.pixabay.com/photo/2017/01/10/19/05/tablets-1974841_1280.jpg",
+    "description": "Used to treat mild to moderate pain and fever.",
+    "dosage": "500mg",
+    "symptoms": "Fever, Headache, Body ache"
+  },
+  {
+    "name": "Ibuprofen",
+    "category": "Pain Relief",
+    "price": 30,
+    "quantity": 50,
+    "image": "https://cdn.pixabay.com/photo/2016/11/29/03/53/medicine-1869298_1280.jpg",
+    "description": "Nonsteroidal anti-inflammatory drug for pain and inflammation.",
+    "dosage": "400mg",
+    "symptoms": "Muscle pain, Inflammation"
+  },
+  {
+    "name": "Cetirizine",
+    "category": "Allergy",
+    "price": 15,
+    "quantity": 80,
+    "image": "https://cdn.pixabay.com/photo/2017/05/13/18/05/pills-2316202_1280.jpg",
+    "description": "Antihistamine for allergy symptoms.",
+    "dosage": "10mg",
+    "symptoms": "Sneezing, Runny nose, Itchy eyes"
+  },
+  {
+    "name": "Amoxicillin",
+    "category": "Antibiotic",
+    "price": 45,
+    "quantity": 60,
+    "image": "https://cdn.pixabay.com/photo/2017/08/06/10/54/medicine-2595102_1280.jpg",
+    "description": "Broad-spectrum antibiotic for bacterial infections.",
+    "dosage": "250mg",
+    "symptoms": "Infections, Sore throat"
+  },
+  {
+    "name": "Metformin",
+    "category": "Diabetes",
+    "price": 35,
+    "quantity": 70,
+    "image": "https://cdn.pixabay.com/photo/2016/11/18/13/47/medicine-1835625_1280.jpg",
+    "description": "Used to control high blood sugar in type 2 diabetes.",
+    "dosage": "500mg",
+    "symptoms": "High blood sugar"
+  },
+  {
+    "name": "Loratadine",
+    "category": "Allergy",
+    "price": 18,
+    "quantity": 90,
+    "image": "https://cdn.pixabay.com/photo/2016/11/18/13/47/medicine-1835625_1280.jpg",
+    "description": "Relieves allergy symptoms.",
+    "dosage": "10mg",
+    "symptoms": "Allergic rhinitis, Hives"
+  },
+  {
+    "name": "Azithromycin",
+    "category": "Antibiotic",
+    "price": 60,
+    "quantity": 40,
+    "image": "https://cdn.pixabay.com/photo/2017/01/10/19/05/tablets-1974841_1280.jpg",
+    "description": "Antibiotic for respiratory tract infections.",
+    "dosage": "250mg",
+    "symptoms": "Chest infection, Sore throat"
+  },
+  {
+    "name": "Aspirin",
+    "category": "Pain Relief",
+    "price": 25,
+    "quantity": 120,
+    "image": "https://cdn.pixabay.com/photo/2016/11/29/03/53/medicine-1869298_1280.jpg",
+    "description": "Pain reliever and anti-inflammatory.",
+    "dosage": "325mg",
+    "symptoms": "Pain, Inflammation, Fever"
+  },
+  {
+    "name": "Glibenclamide",
+    "category": "Diabetes",
+    "price": 28,
+    "quantity": 60,
+    "image": "https://cdn.pixabay.com/photo/2017/05/13/18/05/pills-2316202_1280.jpg",
+    "description": "Helps control blood sugar in type 2 diabetes.",
+    "dosage": "5mg",
+    "symptoms": "High blood sugar"
+  },
+  {
+    "name": "Doxycycline",
+    "category": "Antibiotic",
+    "price": 55,
+    "quantity": 35,
+    "image": "https://cdn.pixabay.com/photo/2017/08/06/10/54/medicine-2595102_1280.jpg",
+    "description": "Antibiotic used for bacterial infections.",
+    "dosage": "100mg",
+    "symptoms": "Bacterial infections"
+  }
+]
