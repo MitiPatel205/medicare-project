@@ -1,9 +1,7 @@
-// server/models/Appointment.js
-
 const mongoose = require('mongoose');
 
 const AppointmentSchema = new mongoose.Schema({
-  userId:    { type: String, required: true }, // unique user identifier
+  userId:    { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   doctor:    { type: String, required: true },
   specialty: { type: String, required: true },
   date:      { type: String, required: true },
