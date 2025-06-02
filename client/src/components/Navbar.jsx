@@ -2,7 +2,8 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg medicare-navbar shadow-sm">
+
+<nav className="navbar navbar-expand-lg medicare-navbar shadow-sm">
     <div className="container-fluid px-3">
       {/* Brand */}
       <Link className="navbar-brand d-flex align-items-center" to="/">

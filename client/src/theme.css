@@ -863,6 +863,179 @@ a:hover {
 .category-cta-link:hover {
   color: var(--color-deep-bluegray);
 }
+/* Medicines Section */
+.medicines-section {
+  padding: 2rem 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.medicines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.medicine-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.medicine-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.medicine-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.medicine-info h4 {
+  margin-bottom: 0.5rem;
+}
+
+.medicine-category {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.medicine-price {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.medicine-stock {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.medicine-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.medicine-btn {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .medicines-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .medicines-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.medicine-detail-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.medicine-detail-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.medicine-detail-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.medicine-detail-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.medicine-category, .medicine-price, .medicine-stock {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.medicine-price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.medicine-description {
+  margin: 1rem 0;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.quantity-selector button {
+  padding: 0.25rem 0.75rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-selector span {
+  min-width: 2rem;
+  text-align: center;
+}
+
+.medicine-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .medicine-detail-card {
+    flex-direction: column;.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+  }
+  .medicine-detail-img img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /* Responsive: horizontal scroll on mobile */
 @media (max-width: 900px) {
@@ -1994,4 +2167,217 @@ mark {
   background: #fff5f5;
   color: #c53030;
   border: 1px solid #fc8181;
+}
+.medicine-categories {
+  padding: 2rem 0;
+}
+.medicare-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.medicare-category-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+.medicare-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.medicare-category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+/*payment page*/
+.payment-bg {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7fa 0%, #f8bbd0 100%);
+}
+
+.payment-card {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  max-width: 420px;
+  width: 100%;
+  animation: fadeIn 0.7s;
+  transition: box-shadow 0.2s;
+}
+
+.payment-card:hover {
+  box-shadow: 0 12px 36px rgba(44, 62, 80, 0.17);
+}
+
+.payment-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.payment-icon {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #42a5f5 0%, #7e57c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.order-summary {
+  margin-bottom: 1.2rem;
+}
+
+.order-summary h4 {
+  margin-bottom: 0.5rem;
+  color: #1976d2;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0 6px 0;
+  gap: 10px;
+}
+
+.order-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  border: 1px solid #eee;
+  object-fit: cover;
+}
+
+.order-name {
+  flex: 1.5;
+  font-size: 1rem;
+}
+
+.order-qty {
+  flex: 0.7;
+  color: #888;
+  font-size: 0.98rem;
+}
+
+.order-price {
+  flex: 1;
+  font-weight: 500;
+  text-align: right;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.13rem;
+  margin-top: 10px;
+  color: #222;
+}
+
+.empty-cart {
+  color: #888;
+  margin: 0.7rem 0;
+}
+
+.payment-form {
+  margin-top: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.23rem;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 7px;
+  border: 1px solid #bdbdbd;
+  font-size: 1rem;
+  background: #fafcff;
+  transition: border 0.18s;
+}
+
+.payment-form input:focus {
+  border: 1.5px solid #42a5f5;
+  outline: none;
+}
+
+.payment-error {
+  color: #d32f2f;
+  margin-bottom: 0.7rem;
+  font-size: 0.97rem;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #42a5f5 0%, #7e57c2 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(66, 165, 245, 0.11);
+}
+
+.pay-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #bdbdbd;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #42a5f5;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 540px) {
+  .payment-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .order-img { width: 32px; height: 32px;}
 }
